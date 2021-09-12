@@ -7,6 +7,14 @@
         "version": 52,
         "index": 0
       }
+    ],
+    "src/Components/Results/Results.js": [
+      {
+        "id": "9636546f-6e79-4193-8ee8-cdf409f4c6fd",
+        "line": 8,
+        "version": 929,
+        "index": 213
+      }
     ]
   }
 }

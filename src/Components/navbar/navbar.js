@@ -1,15 +1,13 @@
 import React from 'react';
 import './navbar.css';
-import request from '../request';
-
+import request from './Results/request';
 function navbar({setselectedoption}) {
   return (
     <div className="navbar">
      <ul className='navlist'>
      <li onClick={()=>setselectedoption(request.fetchtrending)}>TRENDING</li>
      <li>ACTION</li>
-     <li>BOLLYWOOD</li>
-     <li>HOLLYWOOD</li>
+   
       <li onClick={()=>setselectedoption(request.fetchHorrorMovies)}>HORROR</li>
        <li>MYSTERY</li>
         <li onClick={()=>setselectedoption(request.fetchSciFi)}>SCI-FI</li>

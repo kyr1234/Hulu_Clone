@@ -17,7 +17,7 @@ const [selectedoption,setselectedoption]=useState();
 
 
 <Header/>
-<Subnavbar setselectedoption={setselectedoption}/>
+<Subnavbar setselectedoption={selectedoption}/>
 <Results selectedoption={selectedoption}/>
 
     </div>

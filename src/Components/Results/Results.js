@@ -22,12 +22,12 @@ const requests=await axios.get(selectedoption);
 
     <div className="Results">
 
-    <FlipMove
+ 
     {movies.map((movie)=>(
 <VideoCard key={movie.id} movie={movie}/>
 ))}
     
-    >
+    
 
     </div>
   );

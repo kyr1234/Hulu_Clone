@@ -5,14 +5,14 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 
 
 
-const base_url="https://image.tmdb.org/t/p/w500/";
+const base_url="https://image.tmdb.org/t/p/";
 
 
 
-function VideoCard=forwardRef(({movie},ref)=>{
+const  VideoCard=({movie})=>{
   return (
     <div className="VideoCard">
-   <img src={`${base_url}${movie.poster_path||movie.backdrop_path}`} className='images' alt='imagetags'/>
+   <img src={`https://image.tmdb.org/t/p/${movie.poster_path||movie.backdrop_path}`} className='images' alt='imagetags'/>
         
        <Truncate
        line={1}
@@ -28,6 +28,6 @@ function VideoCard=forwardRef(({movie},ref)=>{
        </p>
     </div>
   );
-});
+};
 
 export default VideoCard;
